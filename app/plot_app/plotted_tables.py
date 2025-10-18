@@ -62,7 +62,7 @@ def get_heading_html(ulog, px4_ulog, db_data, link_to_3d_page,
     if link_to_3d_page is not None and \
         any(elem.name == 'vehicle_gps_position' for elem in ulog.data_list):
         link_to_3d = ("<a class='btn btn-outline-primary' href='"+
-                      link_to_3d_page+"'>Open 3D View</a>")
+                      link_to_3d_page+"'>3D GAGO</a>")
     else:
         link_to_3d = ''
 

@@ -147,7 +147,7 @@
 
 
 {% if cesium_api_key != '' %}
-Cesium.Ion.defaultAccessToken = "{{ cesium_api_key }}";
+Cesium.Ion.defaultAccessToken = "{{ cesium_api_key }}";  // nasa APP > config_default.ini eto potang ina try mo i search  {grep -r "cesium_api_key" . } sa wsl terminal para makita kung anong file may ganyan
 {% endif %}
 
 var terrain = Cesium.Terrain.fromWorldTerrain({
