@@ -35,15 +35,6 @@ install ATLAS
 sudo apt-get install libatlas3-base
 ```
 
-#### macOS
-
-macOS already provides SQLite3.
-Use [Homebrew](https://brew.sh) to install fftw:
-
-```bash
-brew install fftw
-```
-
 ### Installation
 
 ```bash
