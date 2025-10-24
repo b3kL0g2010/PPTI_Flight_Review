@@ -20,7 +20,6 @@ Flight Review is deployed at https://review.px4.io.
 
 - Python3 (3.6+ recommended)
 - SQLite3
-- [http://fftw.org/](http://fftw.org/)
 
 #### Ubuntu
 
@@ -54,6 +53,8 @@ Initialize the Database as following:
 
 ```bash
 ./app/setup_db.py
+python setup_db.py
+python3 setup_db.py
 ```
 
 **Note:** `setup_db.py` can also be used to upgrade the database tables, for instance when new entries are added (it automatically detects that).
@@ -79,7 +80,10 @@ cd app
 To start the whole web application:
 ```bash
 cd app
-./serve.py --show
+./serve.py --show > This you need to manually open http://localhost:5006 in browser
+python3 serve.py --show  > automatically open browser in [localhost:5006/](http://localhost:5006/)
+or
+python3 auto_run.py
 ```
 
 The `plot_app` directory contains a bokeh server application for plotting. It
