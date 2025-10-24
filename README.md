@@ -86,10 +86,6 @@ or
 python3 auto_run.py
 ```
 
-The `plot_app` directory contains a bokeh server application for plotting. It
-can be run stand-alone with `bokeh serve --show plot_app` (or with `cd plot_app;
-bokeh serve --show main.py`, to start without the html template).
-
 The whole web application is run with the `serve.py` script. Run `./serve.py -h`
 for further details.
 
@@ -100,19 +96,6 @@ cd PX4-Autopilot/Tools
 ./upload_log.py --quiet --server=http://localhost:5006 <file.ulg>
 ```
 
-## Interactive Usage
-The plotting can also be used interative using a Jupyter Notebook. It
-requires python knowledge, but provides full control over what and how to plot
-with immediate feedback.
-
-- Start the notebook
-- Locate and open the test notebook file `testing_notebook.ipynb`.
-
-```bash
-# Launch jupyter notebook
-cd app
-jupyter notebook testing_notebook.ipynb
-```
 
 # Implementation
 The web site is structured around a bokeh application in `app/plot_app`
